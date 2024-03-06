@@ -1,6 +1,6 @@
 Config = {}
 
-Config.DevMode    = true
+Config.DevMode    = false
 
 Config.PromptKey  = { key = 0x760A9C6F, label = 'Mailbox Office' } -- G
 
@@ -18,11 +18,6 @@ Config.Year = 1899
 
 -- NPC Rendering Distance which is deleting the npc when being away from the mailbox location.
 Config.NPCRenderingDistance = 30.0
-
--- The following government jobs, will be able to send a telegram to everyone.
--- If you don't want anyone to send telegrams to everyone, set an unknown job input.
-Config.GovernmentJobs = { 'police' }
-
 
 -- What letters should it randomly select for generating a mailbox id?
 -- For example, AH-XXXXX, BP-XXXXX.
