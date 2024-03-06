@@ -1,0 +1,779 @@
+@import url('https://fonts.cdnfonts.com/css/chinese-rocks');
+
+@font-face {
+  font-family: MailBoxFont;
+  src: url(../fonts/Passport-Regular.ttf);
+}
+
+@font-face {
+  font-family: Signature;
+  src: url(../fonts/Thesignature.ttf);
+}
+
+body {
+	width: 65%;
+	height: 80%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+
+  display: none;
+  
+    text-align: center;
+	justify-content: center;
+	align-items: center;
+
+  margin-left: 15%;
+  margin-top: -24%;
+
+}
+
+#mailbox{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+
+  margin-top: 30vw;
+
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position-x: center;
+
+  background-size: 78% 100%;
+
+
+  overflow: hidden;
+  width: 78%;
+  height: 100%;
+  
+  justify-content: center;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
+}
+
+/* LEFT SIDE */
+#center-side{
+  border-radius: 5%;
+  width: 78%;
+  height: 100%;
+  margin: 0% 0% 5% 15%;
+}
+
+#centerinfo{
+
+	margin-top: 70%;
+	margin-left: 1%;
+    
+}
+
+#current-mailbox-city-title {
+  position: absolute;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(34, 34, 34);
+	font-size: 1.0vw;
+
+	width: 27vw;
+  margin-top: -27vw;
+  margin-left: 0vw;
+	text-align: left;
+}
+
+#user-uniqueid-title {
+  position: absolute;
+  
+  font-family: "Signature", Signature, serif;
+  color: #59000fc5;
+	font-size: 1.5vw;
+  font-weight: 900;
+
+	width: 8vw;
+  margin-top: -24.2vw;
+  margin-left: 25vw;
+	text-align: center;
+
+}
+
+#close-button {
+  position: absolute;
+  
+	width: 4vw;
+  height: 1.05vw;
+  margin-top: -27.5vw;
+  margin-left: 36.7vw;
+
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+
+}
+
+
+#telegrams-list-button {
+  position: absolute;
+  
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: rgb(34, 34, 34);
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+	font-size: 0.8vw;
+
+  font-weight: 600;
+
+	width: 7vw;
+  margin-top: -4.0vw;
+
+  margin-left: 36.5vw;
+
+  text-align: center;
+
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+
+}
+
+#contacts-list-button {
+  position: absolute;
+  
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: rgb(34, 34, 34);
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+	font-size: 0.8vw;
+
+  font-weight: 600;
+
+	width: 7vw;
+  margin-top: 6.0vw;
+  margin-left: 36.5vw;
+
+  text-align: center;
+
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+}
+
+/* Telegrams Page */
+
+
+#telegrams-sender-title{
+	position: absolute;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #c9ad84;
+	font-size: 0.7vw;
+
+  height: 1vw;
+	width: 8.3vw;
+  
+	text-align: center;
+
+	margin-top: -18vw;
+	margin-left: 0.3vw;
+  
+}
+
+#telegrams-sender-sender-title{
+	position: absolute;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #c9ad84;
+	font-size: 0.7vw;
+
+  height: 1vw;
+	width: 15.6vw;
+
+	text-align: center;
+
+	margin-top: -18vw;
+	margin-left: 8.5vw;
+
+}
+
+#telegrams-sender-timestamp-title{
+	position: absolute;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #c9ad84;
+	font-size: 0.7vw;
+
+  height: 1vw;
+	width: 9.6vw;
+  
+	text-align: center;
+
+	margin-top: -18vw;
+	margin-left: 23.8vw;
+
+}
+
+#telegrams-list {
+	position: absolute;
+
+	font-size: 0.7vw;	
+
+	width: 34vw;
+	height: 26.6vw;
+
+	margin-top: -18.5vw;
+	margin-left: 0.2vw;
+  
+	overflow-y: scroll;
+
+}
+
+#telegrams-list-main {
+	position: relative;
+	color: white;
+
+	width: 32vw;
+	height: 2.3vw;
+
+	flex: 0 0 auto;
+
+	margin-left: 0.5vw;
+	margin-top: 0.2vw;
+
+}
+
+#telegrams-list-view-image{
+	position: absolute;
+
+  height: 2vw;
+	width: 2vw;
+
+	margin-top: -0.40vw;
+	margin-left: 0.20vw;
+
+  text-align: center;
+  
+  background-image: url(../img/icons/closed_mail.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position-x: center;
+
+  background-size: 60% 40%;
+
+}
+
+#telegrams-list-title{
+	position: absolute;
+
+  font-family: 'MailBoxFont', MailBoxFont, serif;
+  color: #2f332a;
+	font-size: 0.7vw;
+  font-weight: 550;
+
+  height: 2vw;
+	width: 6.45vw;
+  
+	text-align: left;
+
+	margin-top: -1.14vw;
+	margin-left: 0.25vw;
+
+  padding-top: 0.65vw;
+  padding-left: 1.70vw;
+  
+	box-shadow: inset 0 0 2px 2px #30332b;
+}
+
+
+#telegrams-list-sender-username{
+	position: absolute;
+
+  font-family: 'MailBoxFont', MailBoxFont, serif;
+  color: #2f332a;
+	font-size: 0.7vw;
+  font-weight: 550;
+
+	height: 2vw;
+	width: 15.4vw;
+  
+	text-align: left;
+
+	margin-top: -1.14vw;
+	margin-left: 8.4vw;
+
+  padding-top: 0.65vw;
+
+	box-shadow: inset 0 0 2px 2px #30332b;
+}
+
+#telegrams-list-sender-city{
+	position: absolute;
+
+  font-family: 'MailBoxFont', MailBoxFont, serif;
+  color: #2f332a;
+	font-size: 0.7vw;
+  font-weight: 550;
+
+	height: 2vw;
+	width: 15.4vw;
+  
+	text-align: center;
+
+	margin-top: -1.14vw;
+	margin-left: 8.4vw;
+
+  padding-top: 0.65vw;
+  
+	box-shadow: inset 0 0 2px 2px #30332b;
+}
+
+#telegrams-list-sender-uniqueid{
+	position: absolute;
+
+  font-family: 'MailBoxFont', MailBoxFont, serif;
+  color: #2f332a;
+	font-size: 0.7vw;
+  font-weight: 550;
+
+	height: 2vw;
+	width: 15.4vw;
+  
+	text-align: right;
+
+	margin-top: -1.14vw;
+	margin-left: 8.4vw;
+
+  padding-top: 0.65vw;
+  
+	box-shadow: inset 0 0 2px 2px #30332b;
+}
+  
+#telegrams-list-timestamp{
+	position: absolute;
+
+  font-family: 'MailBoxFont', MailBoxFont, serif;
+  color: #2f332a;
+	font-size: 0.7vw;
+  font-weight: 550;
+
+	height: 2vw;
+	width: 9.4vw;
+
+	text-align: center;
+
+	margin-top: -1.14vw;
+	margin-left: 23.8vw;
+
+  padding-top: 0.65vw;
+  
+	box-shadow: inset 0 0 2px 2px #30332b;
+
+}
+
+
+/* Telegrams Pages */
+
+#telegrams-pages-list {
+	position: absolute;
+
+	font-size: 0.7vw;	
+
+	width: 30vw;
+	height: 1vw;
+
+	margin-top: -19.3vw;
+	margin-left: 0.2vw;
+
+}
+
+#telegrams-pages-list-value{
+	position: relative;
+  display: inline-block;
+
+  font-family: 'MailBoxFont', MailBoxFont, serif;
+  color: #2f332a;
+	font-size: 0.7vw;
+  font-weight: 750;
+
+	height: 1vw;
+	width: 1.2vw;
+
+	text-align: center;
+}
+
+
+#telegrams-list-create-telegram-button {
+	position: absolute;
+
+	color: #c9ad84;
+
+  font-size: 1.2vw;
+  font-weight: bolder;
+
+  height: 2vw;
+  width: 14vw;
+
+  text-align: center;
+
+	margin-top: 11.45vw;
+	margin-left: 18.8vw;
+
+  padding-top: 0.4vw;
+	
+	background-color: #2f332adc;
+	box-shadow: inset 0 0 2px 2px rgba(22, 22, 22, 0.616);
+
+  border-radius: 2%;
+}
+
+
+
+/* Create Telegram Page & Review */
+
+#telegrams-create-title, #telegrams-review-title {
+	position: absolute;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #c9ad84;
+	font-size: 0.7vw;
+
+  height: 1vw;
+	width: 15.6vw;
+
+  font-weight: bold;
+
+	text-align: left;
+
+  margin-top: -17.9vw;
+  margin-left: 1vw;
+
+  letter-spacing: 1px;
+
+}
+
+#telegrams-create-message-title, #telegrams-review-message-title{
+	position: absolute;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #c9ad84;
+	font-size: 0.7vw;
+
+  height: 1vw;
+	width: 15.6vw;
+
+  font-weight: bold;
+
+	text-align: left;
+
+  margin-top: -15.1vw;
+  margin-left: 1vw;
+
+  letter-spacing: 1px;
+}
+
+#telegrams-create-recipient-title, #telegrams-review-recipient-title, #telegrams-review-sender-title, #telegrams-review-date-title{
+	position: absolute;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2f332a;
+	font-size: 0.7vw;
+  font-weight: bold;
+
+  height: 1vw;
+	width: 15.6vw;
+
+	text-align: left;
+
+  margin-top: -20.3vw;
+  margin-left: 22.25vw;
+
+}
+
+#telegrams-review-sender-title {
+  margin-left: 1vw;
+}
+
+#telegrams-review-recipient-title {
+  margin-left: 13vw;
+}
+
+#telegrams-review-date-title {
+  margin-left: 25.3vw;
+}
+
+#telegrams-create-recipient-input, #telegrams-review-date-text, #telegrams-review-sender-text, #telegrams-review-recipient-text{
+  position: absolute;
+  
+  font-family: 'MailBoxFont', MailBoxFont, serif;
+  color: #002b59;
+	font-size: 0.7vw;
+  font-weight: 650;
+
+  width: 11vw;
+  height: 1vw;
+
+  margin-top: -19.4vw;
+  margin-left: 22.25vw;
+	text-align: left;
+
+  background-color: #b4986d80;
+}
+
+#telegrams-review-sender-text {
+  width: 11vw;
+  margin-left: 1vw;
+}
+
+
+#telegrams-review-recipient-text {
+  width: 11vw;
+  margin-left: 13vw;
+}
+
+#telegrams-review-date-text {
+  width: 8vw;
+  margin-left: 25.25vw;
+}
+
+#telegrams-create-title-input, #telegrams-review-message-title-text {
+  position: absolute;
+
+  font-family: 'MailBoxFont', MailBoxFont, serif;
+  color: #002b59;
+	font-size: 0.7vw;
+  font-weight: 650;
+
+  width: 20vw;
+  height: 1vw;
+
+  margin-top: -16.7vw;
+  margin-left: 1vw;
+	text-align: left;
+
+  background-color: #b4986d80;
+
+}
+
+#telegrams-create-dividing-line, #telegrams-review-dividing-line {
+  position: absolute;
+  color: #2f332a;
+
+  width: 33vw;
+  height: 1.3vw;
+
+  margin-top: -15.4vw;
+  margin-left: 0.4vw;
+
+  text-align: left;
+  background-color: #30332b;
+  box-shadow: inset 0 0 2px 2px #30332b;
+}
+
+#telegrams-create-message-textarea, #telegrams-review-message-textarea {
+  position: absolute;
+
+  font-family: 'MailBoxFont', MailBoxFont, serif;
+  color: #002b59;
+	font-size: 0.7vw;
+  font-weight: 650;
+
+  text-align: left;
+  width: 32.9vw;
+  height: 22.1vw;
+
+  padding-left: 0.7vw;
+  padding-right: 0.5vw;
+  padding-top: 0.5vw;
+
+  margin-top: -14.1vw;
+  margin-left: 0.5vw;
+
+  background-color: #b4986d80;
+
+	overflow-wrap: break-word;  
+  word-wrap: break-word; 
+  word-break: break-word;
+  resize: none;
+
+  border: none;
+  outline: none;
+
+  overflow: hidden;
+}
+
+#telegrams-create-send-button {
+  position: absolute;
+  
+  color: #c9ad84;
+
+  font-size: 1.2vw;
+  font-weight: bolder;
+
+  height: 2vw;
+  width: 14vw;
+
+  text-align: center;
+
+  margin-top: 11.45vw;
+  margin-left: 18.8vw;
+
+  padding-top: 0.4vw;
+  
+	background-color: #2f332adc;
+  box-shadow: inset 0 0 2px 2px rgba(22, 22, 22, 0.616);
+  border-radius: 2%;
+}
+
+#telegrams-review-signature-title {
+	position: absolute;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2f332a;
+	font-size: 0.7vw;
+  font-weight: bold;
+
+  height: 1vw;
+	width: 15.6vw;
+
+	text-align: right;
+
+  margin-top: 9.2vw;
+  margin-left: 3vw;
+}
+
+#telegrams-review-signature-text{
+  position: absolute;
+
+  font-family: "Signature", Signature, serif;
+  color: #002b59;
+	font-size: 1.5vw;
+  font-weight: 900;
+
+  height: 1vw;
+	width: 15.6vw;
+
+	text-align: left;
+
+  margin-top: 8.8vw;
+  margin-left: 20.25vw;
+}
+
+
+#telegrams-review-delete-button {
+  position: absolute;
+  
+  color: #c9ad84;
+
+  font-size: 1.2vw;
+  font-weight: bolder;
+
+  height: 1.4vw;
+  width: 7vw;
+
+  text-align: center;
+
+  margin-top: 12vw;
+  margin-left: 13.8vw;
+
+
+	background-color: #2f332adc;
+  box-shadow: inset 0 0 2px 2px rgba(22, 22, 22, 0.616);
+  border-radius: 2%;
+}
+
+#telegrams-review-reply-button {
+  position: absolute;
+  
+  color: #c9ad84;
+
+  font-size: 1.2vw;
+  font-weight: bolder;
+
+  height: 1.4vw;
+  width: 7vw;
+
+  text-align: center;
+
+  margin-top: 12vw;
+  margin-left: 25.8vw;
+  
+	background-color: #2f332adc;
+  box-shadow: inset 0 0 2px 2px rgba(22, 22, 22, 0.616);
+  border-radius: 2%;
+}
+
+
+#telegrams-list-button:hover, #contacts-list-button:hover, #telegrams-list-title:hover, 
+#telegrams-list-create-telegram-button:hover, #telegrams-pages-list-value:hover,
+#telegrams-create-send-button:hover, #telegrams-review-delete-button:hover, 
+#telegrams-review-reply-button:hover{
+  opacity: 0.7;
+}
+
+
+
+
+
+
+/* Notifications */
+
+#notification_message {
+  position: absolute;
+
+  font-family: 'Chinese Rocks Rg', sans-serif;
+
+  padding-top: 0.5vw;
+
+  text-align: center;
+  font-size: 0.8vw;
+  width: 20vw;
+  height: 3vw;
+  
+  top: 2%;
+  left: 38%;
+
+  background-image: url(../img/notify_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+	background-size: cover;
+}
+
+
+input[type=text] {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+
+	color: #c9ad84;
+
+	text-align: center;
+  background-color: rgba(231, 231, 231, 0.781);
+	border: 1px solid rgba(129, 129, 129, 0.253);
+}
+
+::-webkit-scrollbar {
+	width: 0.5vw;
+	border-radius: 0.1vw;
+	height: 0.55vw;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(16, 12, 32, 0.849);
+	border-radius: 0.5vw;
+	height: 0.55vw;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+*:focus {
+  outline: none;
+}
